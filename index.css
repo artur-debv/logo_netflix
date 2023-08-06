@@ -1,0 +1,41 @@
+div{
+    width: 50px;
+    height: 250px;
+    background-color: #b20710;
+    position: relative;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div::before{
+    content: '';
+    width: 50px;
+    height: 250px;
+    background-color: #b20710;
+    position:absolute;
+    left: 90px;
+}
+
+div::after{
+    content: '';
+    width:175px ;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    border-radius: 50%;
+}
+
+span{
+    width: 50px;
+    height: 250px;
+    background-color: #e50914;
+    position: absolute;
+    left: 46px;
+    transform: skew(20deg);
+}
